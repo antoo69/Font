@@ -55,7 +55,7 @@ async def IndexHandler(call: types.CallbackQuery, callback_data: dict):
     specific_font[call.from_user.id] = n
     all_fonts[call.from_user.id] = False
 
-    txt = "<b>Send me some text 🖋</b>"
+    txt = "<b>Silahkan tuliskan pesan 🖋</b>"
     await call.message.answer(text=txt)
     await call.answer()
 
