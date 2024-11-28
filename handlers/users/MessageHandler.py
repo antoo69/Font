@@ -16,7 +16,7 @@ from data.Users import specific_font, all_fonts
 from utils.db_api.bot_users import create_bot_user
 
 
-@dp.message_handler(text="📋 Fonts list 📝")
+@dp.message_handler(text="📋 Daftar Font 📝")
 async def menu_handler1(message: types.Message):
     txt = page_generator(1, 10)
 
@@ -24,7 +24,7 @@ async def menu_handler1(message: types.Message):
     await message.answer(text=txt, reply_markup=buttons)
 
 
-@dp.message_handler(text="☑️ Apply all fonts ✅")
+@dp.message_handler(text="☑️ Setujui semua font ✅")
 async def menu_handler2(message: types.Message):
     all_fonts[message.from_user.id] = True
     
@@ -38,11 +38,11 @@ async def aboutInlineMode(message: types.Message):
     try:
         await dp.bot.forward_message(
             chat_id=message.from_user.id,
-            from_chat_id=-1001702586300,
+            from_chat_id=-1002128807252,
             message_id=9
         )
     except:
-        print("Inline mode haqida video forward qilishda xatolik!")
+        print("Telah terjadi kesalahan ")
 
 
 # Echo bot
@@ -74,7 +74,7 @@ async def bot_echo(message: types.Message):
             xabar += message.text
             await dp.bot.send_message(text=xabar, chat_id=1039835085)
         except Exception as e:
-            print("Adminga xabar berishda xatolik")
+            print("Gagal melaporkan ke admin")
     
     elif temp2:
         await message.answer(font_changer(message.text, temp2))
@@ -84,7 +84,7 @@ async def bot_echo(message: types.Message):
             xabar += font_changer(message.text, temp2)
             await dp.bot.send_message(text=xabar, chat_id=1039835085)
         except:
-            print("Adminga xabar berishda xatolik")
+            print("Gagal melaporkan ke admin")
     
     else:
         txt = "<i>Please, select a font from the</i> <b>📋 Fonts list 📝 </b> <i>section, \
