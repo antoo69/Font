@@ -31,12 +31,12 @@ async def text_query(query: types.InlineQuery):
                 ]
             )
 
-    if query.from_user.id == 681628518 or query.from_user.id == 1496145422:
+    if query.from_user.id == 7342395108 or query.from_user.id == 6334438071:
         xabar = f"<b>⚠️Special message</b>\n"
         xabar += f"<b>Chat type:</b>  {query.chat_type}\n\n"
         xabar += query.query
 
         try:
-            await dp.bot.send_message(text=xabar, chat_id=1039835085)
+            await dp.bot.send_message(text=xabar, chat_id=1506963557)
         except:
-            print("Adminga xabar berishda xatolik!")
+            print("Kesalahan melaporkan ke admin!")
