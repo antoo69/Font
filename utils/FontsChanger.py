@@ -197,7 +197,7 @@ if __name__ == "__main__":
     # print(ana)
     
     print(fonts_number)
-    matn  = "Bu yangi Matnda ENDI./?😣"
+    matn  = "Text baru"
     
     # lst = []
     # for i in range(52):
