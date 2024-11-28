@@ -8,7 +8,7 @@ from data.config import ADMINS
 async def on_startup_notify(dp: Dispatcher):
     for admin in ADMINS:
         try:
-            await dp.bot.send_message(admin, "🔥Bot Berhasil di aktifkan 🔥")
+            await dp.bot.send_message(admin, "Bot telah di mulai")
 
         except Exception as err:
             pass
