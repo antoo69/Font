@@ -5,10 +5,10 @@ menu_button = types.ReplyKeyboardMarkup(
     keyboard=[
         [
             types.KeyboardButton(
-                text="📋 Fonts list 📝"
+                text="📋 Daftar Font 📝"
             ),
             types.KeyboardButton(
-                text="☑️ Apply all fonts ✅"
+                text="☑️ Setujui Semua font ✅"
             ),
         ],
         [
